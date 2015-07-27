@@ -11,29 +11,36 @@
 
 				<div class="content">
 
-					<header class="main_header">
-
-						<nav class = "main_nav">
-
-							<ul>
-								<li>TEXT1</li>
-								<li>TEXT</li>
-								<li>TEXT</li>
-								<li>TEXT</li>
-							<ul>
-
-						</nav>
-
+					<header class="front_main_header">
 					</header>
 
-					<aside class = "sidebar">
+						<div class="slider_container">
 
-					</aside>
+							<header>
+							</header>
+								<div>
+								</div>
+							<footer>
+							</footer>
 
-					<div class = "article">
+						</div>
 
-					</div>
-					
+						<div class="redir_menu_cont">
+
+							<div class="select_box" onclick="location.href='advert.php';">
+							</div>
+
+							<div class="select_box">
+							</div>
+
+							<div class="select_box">
+							</div>
+
+							<div class="select_box">
+							</div>
+
+						</div>
+
 					<footer class = "main_footer">
 
 					</footer>
