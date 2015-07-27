@@ -3,6 +3,7 @@ body
   margin: 0;
 }
 
+/* ADVERT START */
 .content 
 {
   background-color: #483C32;
@@ -68,4 +69,37 @@ li:hover {
   width: 100%;
   height: 100px;
   background-color: rebeccapurple;
+}
+/* ADVERT END */
+
+.front_main_header
+{
+  height: 150px;
+  background: grey;
+  background-image: url("pic/index_header.jpg");
+}
+
+.slider_container
+{
+  width: 1250px;
+  height: 450;
+  background-color: red;
+  margin: 25px auto;
+}
+
+.redir_menu_cont 
+{
+  width: 1000;
+  height: 250px;
+  background-color: red;
+  margin: 0 auto 25px;
+}
+
+.select_box
+{
+  width: 220px;
+  height: 200px;
+  background-color: blue;
+  float: left;
+  margin: 25px 15px;
 }
