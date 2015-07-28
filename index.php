@@ -5,6 +5,13 @@
 		<head>
 			 <link href="style.css" rel="stylesheet" type="text/css">
 			 <script type="text/javascript" src="nav.js"></script>
+			 <script type="text/javascript" src="slider_class.js"></script>
+			 <script type="text/javascript">
+
+			 var Class = new Slider();
+
+
+			 </script>
 		</head>
 	
 		<body>
@@ -14,14 +21,9 @@
 					<header class="front_main_header">
 					</header>
 
-						<div class="slider_container">
+						<div id="slider" class="slider_container">
 
-							<header>
-							</header>
-								<div>
-								</div>
-							<footer>
-							</footer>
+						
 
 						</div>
 
