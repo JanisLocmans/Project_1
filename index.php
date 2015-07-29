@@ -8,14 +8,14 @@
 			 <script type="text/javascript" src="slider_class.js"></script>
 			 <script type="text/javascript">
 
-			 var Class = new Slider();
-
+			var Class = new Slider();
+			
 
 			 </script>
 		</head>
 	
 		<body>
-
+			<button onclick="Class.start()">Try it</button>
 				<div class="content">
 
 					<header class="front_main_header">

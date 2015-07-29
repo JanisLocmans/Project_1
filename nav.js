@@ -2,13 +2,13 @@ var get_screen_size = screen.height;
 
 
 window.onload = function () {
-    change_class_style('home', 1, 2, 'height', get_screen_size);
-    change_class_style('home', 1, 2, 'background', 'red');
+    //change_class_style('home', 1, 2, 'height', get_screen_size);
+    change_class_style('select_box', 1, 2, 'background', 'yellow', function(){ alert("aroo")});
 }
 
 
 
-function change_class_style(_class, _first, _last, _attr, _value) {
+function change_class_style(_class, _first, _last, _attr, _value, callback) {
 	
     var cols  = document.getElementsByClassName(_class);
     var first = _first - 1;
