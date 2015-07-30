@@ -23,29 +23,18 @@
 
 			window.onload = function () {
 				var element = document.getElementById("slider");
+				var element2 = document.getElementById("js_slider_id");
 				var Class = new Slider(element);
-				var size;
+				
 				Class.create();
 				
-
-				
-
-				size = function getOff()
-				{
-					return element.offsetWidth;
-				}
-
-
-
-
-				alert(size);
 
 				//generate pics from array ( pics )
 				for(var x =0;x<3;x++)
 				{
 					   var img = new Image();
            				   img.src = pics[x];
-           				document.body.appendChild(img);
+           					document.getElementById("js_slider_id").appendChild(img);
 				}
 			}
 
@@ -53,7 +42,16 @@
 
 			<style>
 			
+			.js_slider_mask {
+				margin: 10px;
+				background: grey;
+				float:left;
+			}
+			#js_slider_id img{
+				width: 1230px;
+				height: 430px;
 
+			}
 			</style>
 
 				<!-- SLIDER SCRIPT !!!!!!!! END-->
@@ -66,7 +64,6 @@
 					</header>
 
 						<div id="slider" class="slider_container">
-
 						
 
 						</div>
