@@ -11,7 +11,7 @@
 			<!-- SLIDER SCRIPT !!!!!!!! START-->
 
 			 <script type="text/javascript">
-			var Class = new Slider();
+			
 
 			// TODO: Remove Hardcoded Paths!
 
@@ -23,9 +23,25 @@
 
 			window.onload = function () {
 				var element = document.getElementById("slider");
-				Class.create(element);
-				var x;
-				for(x=0;x<3;x++)
+				var Class = new Slider(element);
+				var size;
+				Class.create();
+				
+
+				
+
+				size = function getOff()
+				{
+					return element.offsetWidth;
+				}
+
+
+
+
+				alert(size);
+
+				//generate pics from array ( pics )
+				for(var x =0;x<3;x++)
 				{
 					   var img = new Image();
            				   img.src = pics[x];
@@ -36,7 +52,7 @@
 			 </script>
 
 			<style>
-
+			
 
 			</style>
 

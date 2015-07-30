@@ -1,9 +1,9 @@
 // Constructor
-function Slider() {
+function Slider(element) {
 	 //private variables
-
+	 
 	 //global variables
-	
+	this.element = element;
       this.start();
 }
 
@@ -12,12 +12,11 @@ Slider.prototype.start = function() {
 	alert("Has started");
 } 
 
-Slider.prototype.create = function(element) {
+Slider.prototype.create = function() {
 
    	this.div = document.createElement('div');
-   	this.div.setAttribute("class", "democlass");
-   	element.appendChild(this.div);
+   	this.div.setAttribute("class", "js_slider_mask");
+
+   	this.element.appendChild(this.div);
 
 }
-
-
