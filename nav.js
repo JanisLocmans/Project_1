@@ -3,12 +3,12 @@ var get_screen_size = screen.height;
 
 window.onload = function () {
     //change_class_style('home', 1, 2, 'height', get_screen_size);
-    change_class_style('select_box', 1, 2, 'background', 'yellow', function(){ alert("aroo")});
+    change_class_style('select_box', 1, 2, 'background', 'yellow');
 }
 
 
 
-function change_class_style(_class, _first, _last, _attr, _value, callback) {
+function change_class_style(_class, _first, _last, _attr, _value) {
 	
     var cols  = document.getElementsByClassName(_class);
     var first = _first - 1;
@@ -26,9 +26,10 @@ function change_class_style(_class, _first, _last, _attr, _value, callback) {
 
     for(i = 1; first < last; first++) {
      cols[first].style[_attr] = _value;
+	}
 
-    }
 } 
+
 
 function push(page_id) {
 
