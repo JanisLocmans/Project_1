@@ -43,13 +43,13 @@
 			<style>
 			
 			.js_slider_mask {
-				margin: 10px;
+				margin: 0;
 				background: grey;
 				float:left;
 			}
 			#js_slider_id img{
-				width: 1230px;
-				height: 430px;
+				width: 1250px;
+				height: 450px;
 
 			}
 			</style>

@@ -4,7 +4,7 @@ function Slider(element) {
 	 
 	 //global variables
 	this.element = element;
-    this.el_width = this.element.offsetWidth;
+    this.el_width = this.element.offsetWidth * 3;
     this.el_height = this.element.offsetHeight;
 
 
@@ -23,7 +23,7 @@ Slider.prototype.create = function() {
 
    	this.element.appendChild(this.div);
 
-   	this.div.style.height = this.el_height - 20;
-   	this.div.style.width = this.el_width - 20;
+   	this.div.style.height = this.el_height;
+   	this.div.style.width = this.el_width;
 }
 

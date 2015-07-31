@@ -85,6 +85,7 @@ li:hover {
   height: 450;
   background-color: red;
   margin: 25px auto;
+  overflow: hidden;
 }
 
 .redir_menu_cont 
