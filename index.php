@@ -23,19 +23,10 @@
 
 			window.onload = function () {
 				var element = document.getElementById("slider");
-				var element2 = document.getElementById("js_slider_id");
-				var Class = new Slider(element);
-				
-				Class.create();
-				
+				var Class = new Slider(element, pics);
 
-				//generate pics from array ( pics )
-				for(var x =0;x<3;x++)
-				{
-					   var img = new Image();
-           				   img.src = pics[x];
-           					document.getElementById("js_slider_id").appendChild(img);
-				}
+				//Class.push();
+
 			}
 
 			 </script>
@@ -48,8 +39,7 @@
 				float:left;
 			}
 			#js_slider_id img{
-				width: 1250px;
-				height: 450px;
+
 
 			}
 			</style>
