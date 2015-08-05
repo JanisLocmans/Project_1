@@ -25,7 +25,7 @@
 				var element = document.getElementById("slider");
 				var Class = new Slider(element, pics);
 
-				//Class.push();
+				Class.push();
 
 			}
 
@@ -35,6 +35,7 @@
 			
 			.js_slider_mask {
 				margin: 0;
+				margin-left: 0;
 				background: grey;
 				float:left;
 			}

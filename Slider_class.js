@@ -6,13 +6,18 @@ function Slider(element, pics) {
 	  this.element = element;
     this.el_width = this.element.offsetWidth;
     this.el_height = this.element.offsetHeight;
+    this.startlocation = 0; // Margin starts at 0. Movement = ( startlocation - x ).
     this.count = pics.length;
+    
     this.start();
+    
 }
 
 // Methods
 Slider.prototype.start = function() {
   this.create();
+
+
 } 
 
 Slider.prototype.create = function() {
@@ -35,8 +40,30 @@ Slider.prototype.create = function() {
     }
 }
 
-Slider.prototype.push = function () {
-  this.div.style.marginLeft -=  this.el_width;
+Slider.prototype.push = function () {  
+	var self = this;
+	var x1 = this.el_width * 10 / 100;
+	var x2 = this.el_width * 80 / 100;
+  	this.d = setInterval(function() {
+		//self.startlocation  != 
+  		if (  self.startlocation > -Math.abs((self.el_width * self.count)) )
+  			{	
+	  			self.startlocation -= 15;
+	  			self.div.style.marginLeft = self.startlocation;
+	  			console.log(self.startlocation);
+  			}
+  		else
+  			{
+  				console.log("WE stopped");
+  				self.stop();
+  			}
+  		
+  	}, 100);
+	 	
+}
+
+Slider.prototype.stop = function() {
+	clearInterval(this.d);
 }
 
 // http://youmightnotneedjquery.com/
