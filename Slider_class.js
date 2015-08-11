@@ -44,21 +44,42 @@ Slider.prototype.push = function () {
 	var self = this;
 	var x1 = this.el_width * 10 / 100;
 	var x2 = this.el_width * 80 / 100;
+	var y1 = 1;
+	var y2 = 0;
+	console.log(self.el_width);
   	this.d = setInterval(function() {
-		//self.startlocation  != 
-  		if (  self.startlocation > -Math.abs((self.el_width * self.count)) )
+
+  		if (  self.startlocation > -Math.abs((self.el_width * (self.count - 1))))
   			{	
-	  			self.startlocation -= 15;
+  				y2 += y1;
+  					if ( y2 < x1 ) 
+  					{
+						y1 = 1;
+  					}
+  					else if (y2 < x2 && y2 > x1)
+  					{
+ 						y1 = 17;
+  					} 
+  					else if (y2 > x2 )
+  					{	
+  							y1 = 1;
+  					}
+  				
+  				
+  				if ( y2 == self.el_width)
+  					{	
+  						y2 = 0;
+  					}
+	  			self.startlocation -= y1;
 	  			self.div.style.marginLeft = self.startlocation;
-	  			console.log(self.startlocation);
+	  			//console.log(self.startlocation);
   			}
   		else
   			{
-  				console.log("WE stopped");
   				self.stop();
   			}
   		
-  	}, 100);
+  	}, 10);
 	 	
 }
 
