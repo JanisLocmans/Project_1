@@ -4,8 +4,10 @@
 
 		<head>
 			 <link href="style.css" rel="stylesheet" type="text/css">
+			 <script type="text/javascript" src="src/jquery-1.11.3.min.js"></script>
 			 <script type="text/javascript" src="nav.js"></script>
 			 <script type="text/javascript" src="slider_class.js"></script>
+
 			 
 
 			<!-- SLIDER SCRIPT !!!!!!!! START-->
@@ -25,7 +27,7 @@
 				var element = document.getElementById("slider");
 				var Class = new Slider(element, pics);
 
-				Class.push();
+				//Class.push();
 
 			}
 
