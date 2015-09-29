@@ -41,9 +41,12 @@
 				background: grey;
 				float:left;
 			}
-			#js_slider_id img{
+			.js_img_holder{
 
-
+				background-size:100%;
+				float:left;
+				box-shadow: inset 0px 0px 35px 5px rgba(252,255,255,1);
+}
 			}
 			</style>
 
